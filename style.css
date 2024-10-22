@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Lato', Arial, sans-serif;
+    background-color: cyan;
 }
 
 nav {
@@ -8,13 +9,21 @@ nav {
     width: 100%;
     height: 80px;
     position: relative;
-    top: 200px;
+    top: 0px;
 
     background-image: url('images/navbar.png');
     background-position: -300px -150px;
 
     display: flex;
     align-items: center;
+}
+
+.welcome-text{
+    font-family: 'Felipa', cursive;
+    font-size: 180px;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+    font-weight: 800;
 }
 
 .navbar {
@@ -29,4 +38,19 @@ nav {
     margin-left: 25%;
     position: relative;
     left: 320px;
+}
+
+.social-links{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.social-links img{
+    width: 35px;
+    height: 35px;
+}
+
+.social-links a{
+    margin-right: 15px;
 }
