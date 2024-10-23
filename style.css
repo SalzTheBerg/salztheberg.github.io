@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Lato', Arial, sans-serif;
-    background-color: cyan;
+    background-color: white;
 }
 
 nav {
@@ -11,10 +11,8 @@ nav {
     position: relative;
     top: 0px;
 
-    background-image: url('images/navbar.png');
-    background-position: -300px -150px;
-
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -22,7 +20,7 @@ nav {
     font-family: 'Felipa', cursive;
     font-size: 180px;
     text-align: center;
-    margin: 100px 0px 0px 0px;
+    margin: 10px 0px 100px 0px;
     font-weight: 800;
 }
 
@@ -31,13 +29,21 @@ nav {
     display: flex; /* Verwende Flexbox, um die Liste horizontal anzuzeigen */
 }
 
+.navbar li:hover {
+    transform: scale(1.02);
+}
+
 .navbar li {
-    color: white;
     font-weight: bolder;
+    width: 300px;
     font-size: 38px;
-    margin-left: 25%;
     position: relative;
-    left: 320px;
+}
+
+.navbar li a span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    vertical-align: middle;
 }
 
 .social-links {
@@ -58,4 +64,16 @@ nav {
 .social-links a:hover img {
     transform: scale(1.2);
     filter: brightness(1.2);
+}
+
+.banner-image{
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image img{
+    position: absolute;
+    width: 100%;
+    top: -250px;
 }
