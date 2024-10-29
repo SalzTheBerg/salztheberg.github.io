@@ -60,9 +60,16 @@
         </ul>
     </nav>
 
-    <div class="banner-image">
-        <img src="images/background_horizontal_1" alt="View of Niefern Fields">
+    <div class="background-slider">
+        <div class="slide active" style="background-image: url('images/niefern_fields.png');"></div>
+        <div class="slide" style="background-image: url('images/hill_view.png');"></div>
+        <div class="slide" style="background-image: url('images/norway_coast.png');"></div>
+
+        <button class="prev" onclick="changeSlide(-1)">&#10094</button>
+        <button class="next" onclick="changeSlide(1)">&#10095</button>
     </div>
+
+    <script src="image-slide.js"></script>
 
 </body>
 </html>
